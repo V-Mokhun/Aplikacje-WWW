@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Volodymyr Mokhun" />
+    <title>JS Test - World's Biggest Bridges</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <table id="layout">
+      <tr>
+        <td colspan="2" id="header">
+          <h1>World's Biggest Bridges</h1>
+        </td>
+      </tr>
+      <tr>
+        <td id="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="js-test.html">JS Test</a></li>
+            <li><a href="bridge1.html">Danyang–Kunshan Grand Bridge</a></li>
+            <li><a href="bridge2.html">Changhua–Kaohsiung Viaduct</a></li>
+            <li><a href="bridge3.html">Tianjin Grand Bridge</a></li>
+            <li><a href="bridge4.html">Weinan Weihe Grand Bridge</a></li>
+            <li><a href="bridge5.html">Bang Na Expressway</a></li>
+            <li><a href="mailto:example.com">Contact</a></li>
+          </ul>
+        </td>
+        <td id="content">
+          <h2>JS Test</h2>
+          <div class="clock-container">
+            <h3>Clock</h3>
+            <div id="date" class="clock-display"></div>
+            <div id="time" class="clock-display"></div>
+            <div class="clock-controls">
+              <button id="start-clock" class="btn btn-primary">
+                Start Clock
+              </button>
+              <button id="stop-clock" class="btn btn-secondary">
+                Stop Clock
+              </button>
+            </div>
+          </div>
+          <div class="form-container">
+            <form id="bg-changer">
+              <div class="form-group">
+                <label for="color-input">Choose a background color:</label>
+                <input type="color" id="color-input" value="#ffffffe6" />
+              </div>
+              <div class="button-group">
+                <button type="submit" class="btn btn-primary">
+                  Change Background
+                </button>
+                <button id="reset-background" class="btn btn-secondary">
+                  Reset Background
+                </button>
+              </div>
+            </form>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" id="footer">
+          <p>&copy; 2024 World's Biggest Bridges. All rights reserved.</p>
+        </td>
+      </tr>
+    </table>
+    <script src="js/clock.js"></script>
+    <script src="js/change-bg.js"></script>
+  </body>
+</html>
