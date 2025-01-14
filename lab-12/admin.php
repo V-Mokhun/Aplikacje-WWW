@@ -45,7 +45,7 @@ function AdminHeader()
 
 function LoginForm()
 {
-    $result = '
+  $result = '
     <div class="login-form">
         <h1 class="login-title">Panel Administracyjny</h1>
         <form action="' . $_SERVER['REQUEST_URI'] . '" method="POST" name="LoginForm" class="login-form-content">
@@ -63,7 +63,7 @@ function LoginForm()
         </form>
     </div>';
 
-    return $result;
+  return $result;
 }
 
 function LoginCheck()
@@ -114,7 +114,9 @@ function LoginCheck()
       $action = $_GET['action'] ?? '';
 
       echo '<div class="card">';
-      if ($action === 'products') {
+      if ($action === "logout") {
+        Logout();
+      } else if ($action === 'products') {
         echo ListaProduktow($link);
       } else if ($action === 'add_product') {
         echo DodajProdukt($link);
